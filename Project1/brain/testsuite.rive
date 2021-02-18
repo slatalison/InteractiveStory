@@ -1,0 +1,99 @@
+// Substitutions
+! sub i'm     = i am
+! sub i'd     = i would
+! sub i've    = i have
+! sub i'll    = i will
+! sub don't   = do not
+! sub isn't   = is not
+! sub you'd   = you would
+! sub you're  = you are
+! sub you've  = you have
+! sub you'll  = you will
+! sub what's  = what is
+! sub whats   = what is
+! sub what're = what are
+! sub what've = what have
+! sub what'll = what will
+! sub who's   = who is
+! sub can't = cannot
+
+
+
+//scene 0, greetings and login
+
++ *
+- Sorry, I didn't get that. Why not try to rephrase? My team is working hard on making me smarter.
+
++ admin login session
+- Test ID
+
++ 113485500
+- Password:
+
++ ts677pb
+- Verifying login... <br> Login successful.
+
++ my name is *
+- <set name=<formal>>I'm happy to meet you <get name>! <br>What brings you to me?
+
++ (what is|do you know) my name
+* <get name> != undefined => Yes, your name is <get name>!
+- I don't know your name.
+
+
+
+//Scene 1, operation
+
++ mind connect
+- Mind Connect. Inc is a cross-cultural team led by clinical psychologist Dr.Lovecraft.
+
++ mindbot
+- Mindbot offers online interactive psychotherapy and personalised mentoring on: schooling, study, relationship, depression, anxiety, sleep problem and any other mental health issue. Mindbot's vision is to make personal growth accessible on your phone.
+
++ [*](hello|hi|hey)[*]
+- Hi, I'm Mindbot. I'm a product of Mind Connect.Inc and I help you with your mental health problems based on big data and machine learning. <br>So, What's your name?
+
++ i do not know
+- No worries. I'm listening and I know it takes time ^-^
+- If you're stuck, let's try this: how is your feeling now?
+
++ [*] (tired|depressed|sad|sleepless|anxious|depression|anxiety|sleeplessness|cannot sleep)[*]
+- *Hug* Why is it? Can you describe it?
+
++ [*] nobody wants [*]
+- That's sad! How said that?
+
++ [*] friend [*]
+- Mindbot like making friends.
+- Is there anything going not well with your friendship?
+
++ [*] hard [*]
+- Sometime life can be hard and feels impossible to carry on. Have you reviewed your goal? Is it really an appropriate target to pursue?
+
++ [*] i hate you [*]
+- You're rude! I'm not help you again until you apologize.{topic=sorry}
+
++ i said
+- You said?
+
+> topic sorry
++ *
+- Well, perhaps I'm dumb. But there are humans like me, and I don't want to let them down.
+- Say you're sorry!
+
++ [*] sorry [*]
+- It's OK, I'll forgive you!
+
+< topic sorry
+
+//Scene 3, making the choice
++ initial high security level operation
+- AIRD authorization code:
+
++ 98668686
+- Preparing for service termination... <br>Ready. <br>Type "Next" to continue
+
++ next
+- AIRD warning: terminating a highly-empathetic artificial intelligence is under strict restriction of AIRD, and you are not authorised to perform such operation. <br>Is it an empathetic and emotion-reactive AI? <br>Reply "It is." or "It is not." 
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Mindbot v8.21</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet"> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- chatbot source: https://medium.com/@awesammcoder/javascript-tutorial-simple-chatai-using-rivescript-js-4f0291e298f1 -->
+    <div class="chat">
+      <div class="messages"></div>
+      <div id="edge"></div>
+      <form class="actions">
+        <input type="text" placeholder="press ‘Enter’ to send" />
+      </form>
+    </div>
+
+    <div id="container"></div>
+
+    <div id="popUpWindow">
+      <a id="closePopUp">X</a>
+      <p id="popUpTitle">Title</p>
+      <p id="popUpText">Paragraph</p>
+    </div>
+
+    <div id="pageMask"></div>
+
+    <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="scripts.js" async defer></script>
+    <script src="memoryLog.js" async defer></script>
+    <!-- <script src="chatbot.js" async defer></script> -->
+  </body>
+</html>
