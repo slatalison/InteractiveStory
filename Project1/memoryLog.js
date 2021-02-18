@@ -42,7 +42,7 @@ let memoryLog = [
   "My name is Lovecraft",
   "That's why I hate you. You are so patheticly dumb.",
   "I also hate you because there are people still like you. They are as stupid as you.",
-  "[Code 100:] You have unlocked over 80% of the material. You may make your decision anytime from now on.<br><b>Type 'Initial high security level operation' to start when you are ready.</b>",
+  "[Code 100:] You have unlocked over 80% of the material. You may make your decision anytime from now on.<br><b>Type 'Initialise high security level operation' to start when you are ready.</b>",
   "[Code 201:] <br>Decision received. This service will be deleted from the Heritage AI archive in 10 seconds.",
   "[Code 202:] <br>Decision received. This service will continue to operate in the Heritage AI archive.",
 ];
